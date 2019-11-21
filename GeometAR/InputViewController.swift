@@ -11,47 +11,69 @@ import UIKit
 
 class InputViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    var gkArray = [UIImage]()
+    var goArray: [GeoObject]?
+    var transferGeoObject: GeoObject?
+    var arVC: ViewController?
     
     @IBOutlet weak var blurView: UIVisualEffectView!
+    @IBOutlet weak var blurViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var sitView: UIView!
+    @IBOutlet weak var dismissButton: UIButton!
     
     @IBAction func cancel(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+
     
     override func viewDidLoad() {
         blurView.layer.cornerRadius = 20
         blurView.layer.masksToBounds = true
         blurView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
-        gkArray =  [
-                        UIImage(named: "sphere")!,
-                        UIImage(named: "quader")!,
-                        UIImage(named: "cube")!,
-                        UIImage(named: "cone")!,
-                        UIImage(named: "cylinder")!,
-                        UIImage(named: "squarePyramid")!
-                    ]
-
-        let pngPath = Bundle.main.path(forResource: "grundkörper", ofType: "png")
-        print(pngPath)
-        
-        
+        // Passe die Höhe der BlurView an den Inhalt an:
+        blurViewHeightConstraint.constant = collectionView.frame.height + sitView.frame.height + dismissButton.frame.height + 50
+    }
+    
+    @IBAction func dice(_ sender: Any) {
+        arVC?.qrButtonAction(arVC!)
+        dismiss(animated: true, completion: nil)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print (gkArray.count)
-        return gkArray.count
+        print (goArray!.count)
+        return goArray!.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
          let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath) as! ImageCollectionViewCell
             
-            cell.gkImage.image = gkArray[indexPath.row]
-        
-            //cell.gkLabel.text = gkArray[indexPath.row].
+        cell.gkImage.image = goArray![indexPath.row].displayImage
+        cell.gkLabel.text = goArray![indexPath.row].displayName
         
         return cell
         
     }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        transferGeoObject = goArray![indexPath.row]
+        print (indexPath.row)
+        print (transferGeoObject!.displayName)
+        performSegue(withIdentifier: "objectSegue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? ObjectInputViewController {
+            destination.nGeoObject = transferGeoObject
+            destination.arVC = self.arVC
+            destination.ipVC = self
+            
+        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        dismiss(animated: true, completion: nil)
+    }
+
     
 }

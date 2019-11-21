@@ -7,21 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B799F0D420AC79DE00ADF070 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B799F0D320AC79DE00ADF070 /* Main.storyboard */; };
+		B799F0D720AC7A6700ADF070 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B799F0D520AC7A6600ADF070 /* InputViewController.swift */; };
+		B799F0D820AC7A6700ADF070 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B799F0D620AC7A6700ADF070 /* ImageCollectionViewCell.swift */; };
+		B799F0DA20AC7ACB00ADF070 /* GeoKoerper.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B799F0D920AC7ACB00ADF070 /* GeoKoerper.xcassets */; };
 		B79E7BEC203DD92400AC20FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E7BEB203DD92400AC20FA /* AppDelegate.swift */; };
 		B79E7BF0203DD92400AC20FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E7BEF203DD92400AC20FA /* ViewController.swift */; };
-		B79E7BF3203DD92400AC20FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B79E7BF1203DD92400AC20FA /* Main.storyboard */; };
-		B79E7BF5203DD92500AC20FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B79E7BF4203DD92500AC20FA /* Assets.xcassets */; };
 		B79E7BF8203DD92500AC20FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B79E7BF6203DD92500AC20FA /* LaunchScreen.storyboard */; };
+		B7A04DEC20AC89EB003F6362 /* ObjectInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A04DEB20AC89EB003F6362 /* ObjectInputViewController.swift */; };
+		B7A04DEE20ADA859003F6362 /* GeoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A04DED20ADA859003F6362 /* GeoObject.swift */; };
+		B7A04DF020ADB433003F6362 /* VirtualObjects.json in Resources */ = {isa = PBXBuildFile; fileRef = B7A04DEF20ADB433003F6362 /* VirtualObjects.json */; };
+		B7BB70492046B9A70057BA99 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB70482046B9A70057BA99 /* QRViewController.swift */; };
+		B7CFCD172092120A003CE2B5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CFCD162092120A003CE2B5 /* Utilities.swift */; };
+		B7CFCD1B20921371003CE2B5 /* FocusSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CFCD1A20921371003CE2B5 /* FocusSquare.swift */; };
+		F35FB9B0204590F000C4C30A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F35FB9AF204590F000C4C30A /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B79E7BE8203DD92400AC20FA /* GeometrieAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeometrieAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B799F0D320AC79DE00ADF070 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B799F0D520AC7A6600ADF070 /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		B799F0D620AC7A6700ADF070 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		B799F0D920AC7ACB00ADF070 /* GeoKoerper.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = GeoKoerper.xcassets; sourceTree = "<group>"; };
+		B79E7BE8203DD92400AC20FA /* GeometAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeometAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B79E7BEB203DD92400AC20FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B79E7BEF203DD92400AC20FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B79E7BF2203DD92400AC20FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B79E7BF4203DD92500AC20FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B79E7BF7203DD92500AC20FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B79E7BF9203DD92500AC20FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7A04DEB20AC89EB003F6362 /* ObjectInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectInputViewController.swift; sourceTree = "<group>"; };
+		B7A04DED20ADA859003F6362 /* GeoObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoObject.swift; sourceTree = "<group>"; };
+		B7A04DEF20ADB433003F6362 /* VirtualObjects.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VirtualObjects.json; sourceTree = "<group>"; };
+		B7BB70482046B9A70057BA99 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		B7CFCD162092120A003CE2B5 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		B7CFCD1A20921371003CE2B5 /* FocusSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSquare.swift; sourceTree = "<group>"; };
+		F35FB9AF204590F000C4C30A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +56,7 @@
 		B79E7BDF203DD92400AC20FA = {
 			isa = PBXGroup;
 			children = (
-				B79E7BEA203DD92400AC20FA /* GeometrieAR */,
+				B79E7BEA203DD92400AC20FA /* GeometAR */,
 				B79E7BE9203DD92400AC20FA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,30 +64,47 @@
 		B79E7BE9203DD92400AC20FA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B79E7BE8203DD92400AC20FA /* GeometrieAR.app */,
+				B79E7BE8203DD92400AC20FA /* GeometAR.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B79E7BEA203DD92400AC20FA /* GeometrieAR */ = {
+		B79E7BEA203DD92400AC20FA /* GeometAR */ = {
 			isa = PBXGroup;
 			children = (
-				B79E7BEB203DD92400AC20FA /* AppDelegate.swift */,
 				B79E7BEF203DD92400AC20FA /* ViewController.swift */,
-				B79E7BF1203DD92400AC20FA /* Main.storyboard */,
-				B79E7BF4203DD92500AC20FA /* Assets.xcassets */,
+				B799F0D520AC7A6600ADF070 /* InputViewController.swift */,
+				B7A04DEB20AC89EB003F6362 /* ObjectInputViewController.swift */,
+				B7BB70482046B9A70057BA99 /* QRViewController.swift */,
+				B799F0D620AC7A6700ADF070 /* ImageCollectionViewCell.swift */,
+				B7A04DED20ADA859003F6362 /* GeoObject.swift */,
+				B7A04DEF20ADB433003F6362 /* VirtualObjects.json */,
+				B799F0D320AC79DE00ADF070 /* Main.storyboard */,
 				B79E7BF6203DD92500AC20FA /* LaunchScreen.storyboard */,
 				B79E7BF9203DD92500AC20FA /* Info.plist */,
+				B79E7BEB203DD92400AC20FA /* AppDelegate.swift */,
+				F35FB9AF204590F000C4C30A /* Assets.xcassets */,
+				B799F0D920AC7ACB00ADF070 /* GeoKoerper.xcassets */,
+				B7E38331205ADACA009F0E28 /* Utilities */,
 			);
-			path = GeometrieAR;
+			path = GeometAR;
+			sourceTree = "<group>";
+		};
+		B7E38331205ADACA009F0E28 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B7CFCD1A20921371003CE2B5 /* FocusSquare.swift */,
+				B7CFCD162092120A003CE2B5 /* Utilities.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B79E7BE7203DD92400AC20FA /* GeometrieAR */ = {
+		B79E7BE7203DD92400AC20FA /* GeometAR */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B79E7BFC203DD92500AC20FA /* Build configuration list for PBXNativeTarget "GeometrieAR" */;
+			buildConfigurationList = B79E7BFC203DD92500AC20FA /* Build configuration list for PBXNativeTarget "GeometAR" */;
 			buildPhases = (
 				B79E7BE4203DD92400AC20FA /* Sources */,
 				B79E7BE5203DD92400AC20FA /* Frameworks */,
@@ -79,9 +114,9 @@
 			);
 			dependencies = (
 			);
-			name = GeometrieAR;
+			name = GeometAR;
 			productName = GeometrieAR;
-			productReference = B79E7BE8203DD92400AC20FA /* GeometrieAR.app */;
+			productReference = B79E7BE8203DD92400AC20FA /* GeometAR.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -96,10 +131,11 @@
 				TargetAttributes = {
 					B79E7BE7203DD92400AC20FA = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
-			buildConfigurationList = B79E7BE3203DD92400AC20FA /* Build configuration list for PBXProject "GeometrieAR" */;
+			buildConfigurationList = B79E7BE3203DD92400AC20FA /* Build configuration list for PBXProject "GeometAR" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +148,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B79E7BE7203DD92400AC20FA /* GeometrieAR */,
+				B79E7BE7203DD92400AC20FA /* GeometAR */,
 			);
 		};
 /* End PBXProject section */
@@ -123,8 +159,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B79E7BF8203DD92500AC20FA /* LaunchScreen.storyboard in Resources */,
-				B79E7BF5203DD92500AC20FA /* Assets.xcassets in Resources */,
-				B79E7BF3203DD92400AC20FA /* Main.storyboard in Resources */,
+				B7A04DF020ADB433003F6362 /* VirtualObjects.json in Resources */,
+				B799F0DA20AC7ACB00ADF070 /* GeoKoerper.xcassets in Resources */,
+				F35FB9B0204590F000C4C30A /* Assets.xcassets in Resources */,
+				B799F0D420AC79DE00ADF070 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +173,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7A04DEC20AC89EB003F6362 /* ObjectInputViewController.swift in Sources */,
+				B7CFCD172092120A003CE2B5 /* Utilities.swift in Sources */,
 				B79E7BF0203DD92400AC20FA /* ViewController.swift in Sources */,
 				B79E7BEC203DD92400AC20FA /* AppDelegate.swift in Sources */,
+				B799F0D820AC7A6700ADF070 /* ImageCollectionViewCell.swift in Sources */,
+				B7A04DEE20ADA859003F6362 /* GeoObject.swift in Sources */,
+				B799F0D720AC7A6700ADF070 /* InputViewController.swift in Sources */,
+				B7BB70492046B9A70057BA99 /* QRViewController.swift in Sources */,
+				B7CFCD1B20921371003CE2B5 /* FocusSquare.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B79E7BF1203DD92400AC20FA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B79E7BF2203DD92400AC20FA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B79E7BF6203DD92500AC20FA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,14 +319,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3RHD3WM3QJ;
-				INFOPLIST_FILE = GeometrieAR/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GeometAR/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = IDMI.GeometrieAR;
+				PRODUCT_BUNDLE_IDENTIFIER = IDMI.GeometAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -300,14 +338,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3RHD3WM3QJ;
-				INFOPLIST_FILE = GeometrieAR/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GeometAR/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = IDMI.GeometrieAR;
+				PRODUCT_BUNDLE_IDENTIFIER = IDMI.GeometAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -315,7 +354,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B79E7BE3203DD92400AC20FA /* Build configuration list for PBXProject "GeometrieAR" */ = {
+		B79E7BE3203DD92400AC20FA /* Build configuration list for PBXProject "GeometAR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B79E7BFA203DD92500AC20FA /* Debug */,
@@ -324,7 +363,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B79E7BFC203DD92500AC20FA /* Build configuration list for PBXNativeTarget "GeometrieAR" */ = {
+		B79E7BFC203DD92500AC20FA /* Build configuration list for PBXNativeTarget "GeometAR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B79E7BFD203DD92500AC20FA /* Debug */,

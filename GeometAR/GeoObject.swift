@@ -15,7 +15,9 @@ class GeoObject: SCNNode {
     let displayName: String
     var displayImage: UIImage
     
-    init (modelName: String, displayName: String, displayImage: UIImage, form: SCNGeometry?){
+    
+    
+    init (modelName: String, displayName: String, displayImage: UIImage){
         self.modelName = modelName
         self.displayName = displayName
         self.displayImage = displayImage
