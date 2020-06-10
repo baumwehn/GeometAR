@@ -65,6 +65,43 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         }
     }
     
+    private func myPlane(){
+        //////////////////////////////////////////////////////////////////////////////
+        // Ebene testweie hinzufügen:
+        let planeNode = SCNNode()
+        planeNode.geometry = SCNPlane(width: CGFloat(0.4), height: CGFloat(0.4))
+        planeNode.geometry?.firstMaterial?.diffuse.contents = UIColor.purple
+        planeNode.opacity = 0.75
+        planeNode.geometry?.firstMaterial?.isDoubleSided = true
+        planeNode.position = SCNVector3(0, 0.1, 0)
+        planeNode.eulerAngles = SCNVector3(25.degreesToRadians, 62.degreesToRadians, 0 )
+        //            anfangEbene.eulerAngles = SCNVector3(0, 90.degreesToRadians, -90.degreesToRadians + ebeneWinkel.degreesToRadians )
+        ursprung.addChildNode(planeNode)
+        
+        let e1text = SCNText(string: "E1", extrusionDepth: 1)
+        let e1node = SCNNode(geometry: e1text)
+        e1node.position = SCNVector3(0.05 , 0.05, -0.1)
+        //e1node.eulerAngles.y = -.pi/2
+        e1node.geometry?.firstMaterial?.diffuse.contents = UIColor.purple
+        e1node.scale = SCNVector3(schriftgroesse/2, schriftgroesse/2, schriftgroesse/2)
+        ursprung.addChildNode(e1node)
+        
+        //Punkt:
+        let punkt = SCNNode()
+        punkt.geometry = SCNSphere(radius: CGFloat(0.005))
+        punkt.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
+        punkt.position = SCNVector3(0.3, 0.2, -0.01)
+        ursprung.addChildNode(punkt)
+        //Beschriftung Punkt
+        let a1text = SCNText(string: "A", extrusionDepth: 1)
+        let a1node = SCNNode(geometry: a1text)
+        a1node.position = SCNVector3(0.28 , 0.18, -0.01)
+        //e1node.eulerAngles.y = -.pi/2
+        a1node.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
+        a1node.scale = SCNVector3(schriftgroesse/2, schriftgroesse/2, schriftgroesse/2)
+        ursprung.addChildNode(a1node)
+
+    }
     override func viewDidAppear(_ animated: Bool) {
         UserDefaults.standard.set(koordGesetzt, forKey: "koordGesetzt")
     }
@@ -147,7 +184,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             
             addButton.isHidden = false
         }
-        
+        self.myPlane()
     }
     
     @IBAction func qrButtonAction(_ sender: Any) {
@@ -1030,41 +1067,6 @@ private extension SCNVector3{
             return (distance)
         }
     }
-//    //////////////////////////////////////////////////////////////////////////////
-//    // Ebene testweie hinzufügen:
-//    let planeNode = SCNNode()
-//    planeNode.geometry = SCNPlane(width: CGFloat(0.4), height: CGFloat(0.4))
-//    planeNode.geometry?.firstMaterial?.diffuse.contents = UIColor.purple
-//    planeNode.opacity = 0.75
-//    planeNode.geometry?.firstMaterial?.isDoubleSided = true
-//    planeNode.position = SCNVector3(0, 0.1, 0)
-//    planeNode.eulerAngles = SCNVector3(25.degreesToRadians, 62.degreesToRadians, 0 )
-//    //             anfangEbene.eulerAngles = SCNVector3(0, 90.degreesToRadians, -90.degreesToRadians + ebeneWinkel.degreesToRadians )
-//    ursprung.addChildNode(planeNode)
-//
-//    let e1text = SCNText(string: "E1", extrusionDepth: 1)
-//    let e1node = SCNNode(geometry: e1text)
-//    e1node.position = SCNVector3(0.05 , 0.05, -0.1)
-//    //e1node.eulerAngles.y = -.pi/2
-//    e1node.geometry?.firstMaterial?.diffuse.contents = UIColor.purple
-//    e1node.scale = SCNVector3(schriftgroesse/2, schriftgroesse/2, schriftgroesse/2)
-//    ursprung.addChildNode(e1node)
-//
-//    //Punkt:
-//    let punkt = SCNNode()
-//    punkt.geometry = SCNSphere(radius: CGFloat(0.005))
-//    punkt.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
-//    punkt.position = SCNVector3(0.3, 0.2, -0.01)
-//    ursprung.addChildNode(punkt)
-//    //Beschriftung Punkt
-//    let a1text = SCNText(string: "A", extrusionDepth: 1)
-//    let a1node = SCNNode(geometry: a1text)
-//    a1node.position = SCNVector3(0.28 , 0.18, -0.01)
-//    //e1node.eulerAngles.y = -.pi/2
-//    a1node.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
-//    a1node.scale = SCNVector3(schriftgroesse/2, schriftgroesse/2, schriftgroesse/2)
-//    ursprung.addChildNode(a1node)
-
 }
 
 extension String {
